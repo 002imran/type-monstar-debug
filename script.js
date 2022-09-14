@@ -39,6 +39,7 @@ const typeController = (e) => {
   }
 
   userText += newLetter;
+  
 
   const newLetterCorrect = validate(newLetter);
 
@@ -49,7 +50,7 @@ const typeController = (e) => {
   }
 
   // check if given question text is equal to user typed text
-  if (questionText === userText) {
+  if (questionText.length === userText.length) {
     gameOver();
   }
 };
